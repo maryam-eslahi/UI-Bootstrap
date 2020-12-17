@@ -50,9 +50,17 @@
                         <p>We take inspiration from the World's best cuisines, and create a unique fusion experience.
                             Our lipsmacking creations will tickle your culinary senses!</p>
                     </div>
-                    <div class="col-12 col-sm align-self-center">
-                        <img src="img/logo.png" class="img-fluid">
-
+                    <div class="col-12 col-sm-6 align-self-center">
+                        <div class="row">
+                        <div class="col-6 col-sm-6">
+                            <img src="img/logo.png" class="img-fluid">
+                        </div>
+                        <div class="col-6 col-sm-6 align-self-center">
+                            <a class="btn btn-warning" href="#reserve">
+                                <span class="">Reserve</span>
+                            </a>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -127,108 +135,63 @@
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="row row-content align-items-center justify-content-center">
+            <div class="row row-content align-items-center justify-content-center" id="reserve">
                 <div class="col-12 col-sm-8">
                     <div class="card justify-content-center">
                         <form>
                             <h3 class="card-header bg-primary text-white bg-warning">Reserve a Table</h3>
                             <div class="card-body">
                                     <form>
-                                        <div class="form-group row align-items-center justify-content-center">
-                                         <!--   <label for="guestNum" class="col-md-4 col-form-label">Number of Guests:</label>-->
-                                            <label for="guestNum" class="col-md-4 control-label">Number of Guests:</label>
-                                            <div class="col-md-8" id="guestNum">
-                                                <div class="form-check-inline">
-                                                    <label class=" form-check-label">
-                                                        <input type="radio" class="form-check-input radio-inline form-control"
-                                                            name="optradio">1
-                                                    </label>
-                                                </div>
-                                                <div class="form-check-inline">
-                                                    <label class=" form-check-label">
-                                                        <input type="radio" class="form-check-input radio-inline form-control"
-                                                            name="optradio">2</label>
-                                                </div>
-                                                <div class="form-check-inline">
-                                                    <label class=" form-check-label">
-                                                        <input type="radio" class="form-check-input radio-inline form-control"
-                                                            name="optradio">3</label>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check-inline">
-                                                    <label class=" form-check-label">
-                                                        <input type="radio" class="form-check-input radio-inline form-control"
-                                                            name="optradio">4</label>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check-inline">
-                                                    <label class=" form-check-label">
-                                                        <input type="radio" class="form-check-input radio-inline form-control"
-                                                            name="optradio">5</label>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check-inline">
-                                                    <label class=" form-check-label radio-inline">
-                                                        <input type="radio" class="form-check-input radio-inline form-control"
-                                                            name="optradio">6</label>
-                                                    </label>
-                                                </div>
+                                        <div class="form-group row">
+                                            <label for="guestNum" class="col-md-3 control-label">Number of Guests:</label>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                  <input type="radio" class="form-check-input" name="optradio">1
+                                                </label>
+                                              </div>
+                                              <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                  <input type="radio" class="form-check-input" name="optradio">2
+                                                </label>
+                                              </div>
+                                              <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                  <input type="radio" class="form-check-input" name="optradio">3
+                                                </label>
+                                              </div>
+                                              <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                  <input type="radio" class="form-check-input" name="optradio">4
+                                                </label>
+                                              </div>
+                                              <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                  <input type="radio" class="form-check-input" name="optradio">5
+                                                </label>
+                                              </div>
+                                              <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                  <input type="radio" class="form-check-input" name="optradio">6
+                                                </label>
+                                              </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="telnum" class=" col-12 col-md-3 col-form-label">Date & Time: </label>
+                                            <div class="col-12 col-md-3">
+                                                <input class="form-control" type="text" name="date" id="date" placeholder="date">
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <input class="form-control" type="text" name="time" id="time" placeholder="time">
                                             </div>
                                         </div>
-                              <!--  <dl class="row ">
-                                    <dt class="col-4 mt-3">Number of guests: </dt>
-                                    <dd class="col-8  mt-4">
-                                        <div class="form-check-inline">
-                                            <label class=" form-check-label">
-                                                <input type="radio" class="form-check-input radio-inline form-control"
-                                                    name="optradio">1
-                                            </label>
+                                        <div class="offset-group row">
+                                            <div class="offset-md-3 col-md-10">
+                                                <button type="submit" class="btn btn-primary" id="submit" name="submit" value="">
+                                                    Reserve
+                                                </button>
+                                            </div>
+                    
                                         </div>
-                                        <div class="form-check-inline">
-                                            <label class=" form-check-label">
-                                                <input type="radio" class="form-check-input radio-inline form-control"
-                                                    name="optradio">2</label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <label class=" form-check-label">
-                                                <input type="radio" class="form-check-input radio-inline form-control"
-                                                    name="optradio">3</label>
-                                            </label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <label class=" form-check-label">
-                                                <input type="radio" class="form-check-input radio-inline form-control"
-                                                    name="optradio">4</label>
-                                            </label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <label class=" form-check-label">
-                                                <input type="radio" class="form-check-input radio-inline form-control"
-                                                    name="optradio">5</label>
-                                            </label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <label class=" form-check-label radio-inline">
-                                                <input type="radio" class="form-check-input radio-inline form-control"
-                                                    name="optradio">6</label>
-                                            </label>
-                                        </div>
-                                    </dd>
-                                    <dt class="col-4 mt-4">Date and Time: </dt>
-                                    <dd class="col-8 mt-4">
-                                        <div class="col-6">
-                                            <input class="form-control" type="text" name="date" id="date" placeholder="date">
-                                        </div>
-                                        <div class="col-6">
-                                            <input class="form-control" type="text" name="time" id="time" placeholder="time">
-                                        </div>
-                                    </dd>
-
-                                    <dd class="col-12 offset-md-3 mt-4">
-                                        <button type="submit" class="btn btn-primary" id="submit" name="submit"
-                                            value="">Reserv</button>
-                                    </dd>
-                                </dl>-->
                             </div>
                         </form>
                     </div>
